@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+}
+
+#puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    cursor: pointer;
+    position: absolute;
+}
+
+.tile.empty {
+    background-color: #282c34;
+    cursor: default;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #0095DD;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0077aa;
+}
